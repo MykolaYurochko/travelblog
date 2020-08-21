@@ -1,0 +1,62 @@
+@import '_animations';
+@import '_font';
+@import '_mixins';
+@import '_variables';
+
+@import '_header';
+@import '_animation';
+@import '_posts';
+@import '_articles';
+@import '_contact';
+@import '_footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainfont;
+  color: $font-color;
+}
+
+body {
+  background: $main-bg;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  margin-top: 85px;
+  @media screen {
+    @media (max-width: 992px) {
+      margin-top: 110px;
+    }
+
+    @media (max-width: 576px) {
+      margin: 110px auto 0;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px 0;
+  @media screen {
+    @media (max-width: 992px) {
+      width: 95vw;
+    }
+
+    @media (max-width: 576px) {
+      width: 98vw;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+}

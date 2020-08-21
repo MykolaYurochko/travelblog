@@ -1,0 +1,43 @@
+@keyframes move {
+  0% {
+    transform: rotate(-2deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cloudFly {
+  0%,
+  100% {
+    background-position: 0px;
+  }
+  50% {
+    background-position: 5440px;
+  }
+}
+
+@keyframes zooming {
+  0%,
+  100% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 150% 150%;
+  }
+}

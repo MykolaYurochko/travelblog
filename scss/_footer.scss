@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 3% 10%;
+  background: $header-footer-bg;
+
+  @include flex-center;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+  &__item {
+    @media screen and (max-width: 992px) {
+      padding: 10px 0;
+    }
+    &--link {
+      padding: 10px;
+      & i {
+        color: $simple-white;
+        font-size: 1.7em;
+        font-weight: normal;
+
+        &:hover {
+          color: darken($simple-white, 30%);
+          animation: flip 1s 1 alternate;
+        }
+      }
+    }
+  }
+
+  & .links {
+    display: flex;
+  }
+  & p {
+    color: $simple-white;
+    font-weight: 100;
+
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+  }
+}
